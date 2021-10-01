@@ -1,0 +1,7 @@
+services:
+  Dnd\Bundle\CSVBundle\Command\CSVCommand:
+    tags:
+      - { name: console.command, command: 'csv:grid' }
+    public: true
+    arguments:
+      [ '@kernel' , '@filesystem', '@logger']

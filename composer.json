@@ -1,0 +1,32 @@
+{
+    "name": "dnd/csv-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony CSV Bundle",
+    "keywords": [
+        "csv"
+    ],
+    "license": "MIT",
+    "version": "1.2.0",
+    "authors": [
+        {
+            "name": "kallard",
+            "email": "kallard@dnd.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "cocur/slugify": "^4.0"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dnd\\Bundle\\CSVBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
